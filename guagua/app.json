@@ -5,8 +5,19 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#2EBFEE",
+    "navigationBarTitleText": "呱呱小程序",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#000000",
+    "selectedColor":"#0000ff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"日志"
+    }]
   }
 }

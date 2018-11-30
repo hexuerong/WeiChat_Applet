@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log('app onLaunch');
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -32,6 +33,19 @@ App({
         }
       }
     })
+  },
+  onShow: function () {
+    console.log('app onShow');
+  },
+  onHide: function () {
+    //比如在游戏在后台运行的时候，是否需要保存一下游戏进度等。或者类似订单信息这样的情况。
+    console.log('app onHide');
+  },
+  onError: function () {
+    console.log('app onError');
+  },
+  onPageNotFound: function () {
+    console.log('app onPageNotFound');
   },
   globalData: {
     userInfo: null

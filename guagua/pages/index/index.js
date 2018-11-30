@@ -1,6 +1,8 @@
 //index.js
+import moduleLog from '../../utils/module.js'
+
 //获取应用实例
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
@@ -16,6 +18,7 @@ Page({
     })
   },
   onLoad: function () {
+    moduleLog('哈哈，ES6的模块化运用成功！');
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,6 +45,9 @@ Page({
         }
       })
     }
+  },
+  onPullDownRefresh: function () {//下拉刷新页面操作
+    // 需要在app.json的window选项中或页面配置中开启enablePullDownRefresh。
   },
   getUserInfo: function(e) {
     console.log(e)
