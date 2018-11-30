@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/login"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,10 +15,19 @@
     "selectedColor":"#0000ff",
     "list":[{
       "pagePath":"pages/index/index",
-      "text":"首页"
+      "text":"首页",
+      "iconPath":"images/ico_story.png",
+      "selectedIconPath":"images/ico_story.png"
     },{
       "pagePath":"pages/logs/logs",
-      "text":"日志"
+      "text":"日志",
+      "iconPath": "images/icon_log.png",
+      "selectedIconPath": "images/icon_log.png"
+    },{
+      "pagePath": "pages/login/login",
+      "text": "个人中心",
+      "iconPath": "images/icon_task.png",
+      "selectedIconPath": "images/icon_task.png"
     }]
   }
 }

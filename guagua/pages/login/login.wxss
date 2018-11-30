@@ -1,0 +1,33 @@
+.page__icon{
+  width: 200rpx;
+  height: 200rpx;
+}
+.page__form{
+  padding: 50rpx 0;
+  width: 600rpx;
+}
+.section{
+  width: 100%;
+  padding: 15rpx 0px;
+}
+.page__form input{
+  margin-bottom: 3rpx;
+  border-bottom: 1px solid gainsboro;
+}
+.navigator-content{
+  display: flex;
+}
+.navigator-content navigator{
+  flex: 1;
+  font-size: 30rpx;
+  color: #515151;
+}
+.navigator-hover{
+  color: blue;
+}
+.navigator-left{
+  text-align: left;
+}
+.navigator-right{
+  text-align: right;
+}

@@ -19,3 +19,7 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.test{
+  padding: 100px 0px;
+}

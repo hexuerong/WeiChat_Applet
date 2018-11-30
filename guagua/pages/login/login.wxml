@@ -1,0 +1,18 @@
+<view class="container">
+  <image class="page__icon" src="../../images/newicon.png" lazy-load="{{true}}"></image>
+  <view class="page__form">
+    <view class='section'>
+      <input type='text' bindinput='bindemailInput' placeholder='请输入邮箱' auto-focus></input>
+    </view>
+    <view class='section'>
+      <input password type='text' bindinput='bindpasswordInput' placeholder='请输入密码'></input>
+    </view>
+    <view class='section'>
+      <button type='primary' bindtap='login'>登录</button>
+    </view>
+    <view class='section navigator-content'>
+      <navigator class='navigator-left' url="/page/navigate/navigate" hover-class="navigator-hover">忘记密码</navigator>
+      <navigator class='navigator-right' url="/page/navigate/navigate" hover-class="navigator-hover">新用户注册</navigator>
+    </view>
+  </view>
+</view>

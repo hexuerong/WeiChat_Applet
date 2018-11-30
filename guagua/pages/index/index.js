@@ -49,6 +49,9 @@ Page({
   onPullDownRefresh: function () {//下拉刷新页面操作
     // 需要在app.json的window选项中或页面配置中开启enablePullDownRefresh。
   },
+  onReachBottom: function () {
+    console.log('到达页面底端的回调');
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
