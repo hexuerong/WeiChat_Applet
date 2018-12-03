@@ -15,4 +15,8 @@
       <navigator class='navigator-right' url="/page/navigate/navigate" hover-class="navigator-hover">新用户注册</navigator>
     </view>
   </view>
+  <view class='page__otherLogin'>
+    <view><text>其他登录方式：</text></view>
+    <image class='wx_login' src='../../images/icon24_wx_button.png' bindtap='wxLogin'></image>
+  </view>
 </view>

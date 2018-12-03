@@ -109,4 +109,18 @@ Page({
       password: e.detail.value
     });
   },
+
+  wxLogin: function (e) {//微信登录
+    /* wx.login({
+      success: res => {
+        console.log(res);
+        if(res.code){
+          //将code发送给开发者服务器
+        }
+      },
+      fail: msg => {
+
+      }
+    }); */
+  },
 })

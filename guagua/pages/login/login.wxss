@@ -1,7 +1,12 @@
+.container{
+  padding-bottom: 0rpx;
+}
+
 .page__icon{
   width: 200rpx;
   height: 200rpx;
 }
+
 .page__form{
   padding: 50rpx 0;
   width: 600rpx;
@@ -30,4 +35,14 @@
 }
 .navigator-right{
   text-align: right;
+}
+
+.page__otherLogin{
+  width: 600rpx;
+  font-size: 30rpx;
+}
+.wx_login{
+  width: 118px;
+  height: 24px;
+  padding: 20rpx 0rpx;
 }

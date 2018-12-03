@@ -1,33 +1,41 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/userCenter/userCenter"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#2EBFEE",
     "navigationBarTitleText": "呱呱小程序",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "color":"#000000",
-    "selectedColor":"#0000ff",
-    "list":[{
-      "pagePath":"pages/index/index",
-      "text":"首页",
-      "iconPath":"images/ico_story.png",
-      "selectedIconPath":"images/ico_story.png"
-    },{
-      "pagePath":"pages/logs/logs",
-      "text":"日志",
-      "iconPath": "images/icon_log.png",
-      "selectedIconPath": "images/icon_log.png"
-    },{
-      "pagePath": "pages/login/login",
-      "text": "个人中心",
-      "iconPath": "images/icon_task.png",
-      "selectedIconPath": "images/icon_task.png"
-    }]
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0000ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ico_story.png",
+        "selectedIconPath": "images/ico_story.png"
+      },{
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/icon_log.png",
+        "selectedIconPath": "images/icon_log.png"
+      },{
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "个人中心",
+        "iconPath": "images/icon_viewavatar.png",
+        "selectedIconPath": "images/icon_viewavatar.png"
+      },{
+        "pagePath": "pages/login/login",
+        "text": "登录",
+        "iconPath": "images/icon_task.png",
+        "selectedIconPath": "images/icon_task.png"
+      }
+    ]
   }
 }
