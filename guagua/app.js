@@ -30,6 +30,24 @@ App({
               }
             }
           })
+        }else{
+          /* wx.openSetting({//打开设置，显示小程序已经向用户请求过的权限
+            success: res => {
+              console.log('')
+            },
+            fail: msg => {
+
+            }
+          }); */
+          /* wx.authorize({
+            scope: 'scope.userInfo',
+            success: res => {
+
+            },
+            fail: msg => {
+
+            }
+          }); */
         }
       }
     })

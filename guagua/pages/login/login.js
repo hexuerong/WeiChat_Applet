@@ -111,16 +111,23 @@ Page({
   },
 
   wxLogin: function (e) {//微信登录
-    /* wx.login({
+    wx.login({
       success: res => {
         console.log(res);
         if(res.code){
           //将code发送给开发者服务器
+          wx.request({
+            //请求地址必须是https或者websocket，且不能是IP地址或者localhost
+            url: 'https://localhost:8082',
+            data: {
+              code: res.code
+            }
+          });
         }
       },
       fail: msg => {
 
       }
-    }); */
+    });
   },
 })

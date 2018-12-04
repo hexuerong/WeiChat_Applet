@@ -1,0 +1,30 @@
+{
+  "name": "weichat_applet",
+  "version": "1.0.0",
+  "description": "微信小程序 本地服务器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexuerong/WeiChat_Applet.git"
+  },
+  "keywords": [
+    "weui",
+    "nodejs",
+    "express"
+  ],
+  "author": "hexuerong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexuerong/WeiChat_Applet/issues"
+  },
+  "homepage": "https://github.com/hexuerong/WeiChat_Applet#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "multer": "^1.4.1"
+  }
+}

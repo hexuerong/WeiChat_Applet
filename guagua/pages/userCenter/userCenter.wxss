@@ -1,1 +1,20 @@
 /* pages/userCenter/userCenter.wxss */
+.userInfo{
+  padding: 40rpx 20rpx;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*相对父元素水平居中*/
+  align-items: center;/*子元素垂直居中*/
+}
+.userInfo_avatarUrl{
+  width: 200rpx;
+  height: 200rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.1);
+}
+.userInfo_nickName{
+  padding-top: 40rpx;
+}
