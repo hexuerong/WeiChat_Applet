@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.4.1",
 	"appid": "wxefb4ee8c50037f43",
 	"projectname": "guagua",
 	"debugOptions": {
