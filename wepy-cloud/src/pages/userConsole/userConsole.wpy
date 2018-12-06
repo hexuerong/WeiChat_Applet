@@ -1,0 +1,32 @@
+<template>
+<view class="container">
+  <view class="list">
+    <view class="list-item" bindtap="testCgi">
+      <text class="request-text">用户 openid 获取成功</text>
+    </view>
+    <view class="list-item" bindtap="testCgi">
+      <text class="request-text">{{openid}}</text>
+    </view>
+  </view>
+</view>
+</template>
+
+<script>
+import wepy from 'wepy'
+export default class UserConsole extends wepy.page{
+    config = {
+      navigationBarTitleText: '用户管理指引'
+    }
+    data = {
+        openid: ''
+    }
+
+    onLoad () {
+        this.openid = this.$parent.globalData.openid;
+    }
+}
+</script>
+
+<style lang="less">
+
+</style>

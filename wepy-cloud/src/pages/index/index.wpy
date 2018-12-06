@@ -23,6 +23,11 @@
     </view>
 
     <panel>
+      <view class="title" slot="title">测试云函数</view>
+      <button @tap="getOpenid" size="mini">点击获取openid</button>
+    </panel>
+
+    <panel>
       <view class="title" slot="title">测试数据绑定</view>
 
       <text class="info">{{normalTitle}}</text>
@@ -81,11 +86,11 @@
   import wepy from 'wepy'
   import Panel from '@/components/panel' // alias example
   import Counter from 'counter' // alias example
-  import List from '../components/list' // aliasFields example
+  import List from '../../components/list' // aliasFields example
   import moduleA from 'module-a' // aliasFields ignore module example
-  import Group from '../components/group'
+  import Group from '../../components/group'
   import Toast from 'wepy-com-toast'
-  import testMixin from '../mixins/test'
+  import testMixin from '../../mixins/test'
 
   console.log('moduleA ignored: ', moduleA) // => moduleA ignored: {}
 
@@ -167,6 +172,27 @@
     }
 
     methods = {
+      getOpenid () {//点击获取openid
+        // 调用云函数
+        wx.cloud.callFunction({
+          name: 'login',
+          data: {},
+          success: res => {
+            console.log('[云函数] [login] user openid: ', res.result.openid);
+            console.log(this.$parent.globalData);
+            this.$parent.globalData.openid = res.result.openid;
+            wx.navigateTo({
+              url: '../userConsole/userConsole',
+            })
+          },
+          fail: err => {
+            console.error('[云函数] [login] 调用失败', err)
+            /* wx.navigateTo({
+              url: '../deployFunctions/deployFunctions',
+            }) */
+          }
+        })
+      },
       plus () {
         this.mynum++
       },

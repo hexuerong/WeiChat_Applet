@@ -11,5 +11,7 @@
 	"appid": "wxefb4ee8c50037f43",
 	"projectname": "wepy-cloud",
 	"miniprogramRoot": "dist/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"libVersion": "2.4.1",
 	"condition": {}
 }
