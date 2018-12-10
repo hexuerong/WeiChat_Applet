@@ -18,8 +18,11 @@
 <template>
   <view class="container">
     <view class="userinfo" @tap="handleViewTap">
-      <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
-      <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
+      <block wx:if="{{ userInfo }}">
+        <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
+        <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
+      </block>
+      <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" wx:else>获取用户信息</button>
     </view>
 
     <panel>
@@ -112,9 +115,7 @@
 
     data = {
       mynum: 20,
-      userInfo: {
-        nickName: '加载中...'
-      },
+      userInfo: null,
       normalTitle: '原始标题',
       setTimeoutTitle: '标题三秒后会被修改',
       count: 0,
@@ -172,6 +173,15 @@
     }
 
     methods = {
+      handleViewTap () {
+
+      },
+
+      onGotUserInfo: function(e) {//获取用户信息
+        console.log('手动调用获取授权信息');
+        this.userInfo = e.detail.userInfo;
+      },
+
       getOpenid () {//点击获取openid
         // 调用云函数
         wx.cloud.callFunction({
